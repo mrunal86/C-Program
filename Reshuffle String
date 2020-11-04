@@ -1,0 +1,27 @@
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            string st = ReturnString();
+            string retStr = ShuffleString(st);
+            Console.Write("Shuffle String:"+ retStr);
+            
+            Console.ReadKey();
+        }
+
+        private static string ReturnString()
+        {
+            Console.WriteLine("Enter the first name and last name with space");
+            string st = Console.ReadLine();
+            return st;  
+        }
+
+        private static string ShuffleString(string s)
+        {
+            string[] subStr = s.Split(' ');
+            string final = subStr[1] + " "+subStr[0];
+            Console.WriteLine(final);
+            
+            return final;
+        }
+    }
