@@ -1,0 +1,43 @@
+class ArrangeElements
+    {
+        static void Main()
+        {
+            int[] arr1 = { 1, 2, -3, -4, 5 };
+            
+            CopyTOArra2(arr1);
+        }
+
+        private static void CopyTOArra2(int[] arr1)
+        {
+            int countPos=0, countNeg=0;
+
+            int[] output = new int[5];
+            for(int i=0;i<arr1.Length;i++)
+            {
+                if (arr1[i] >= 0)
+                    countPos++;
+                else
+                    countNeg++;
+            }
+            countNeg = 0;
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                if(arr1[i]<0)
+                {
+                    
+                    output[countNeg] = arr1[i];
+                    countNeg++;
+                }
+                else
+                {
+                    output[countPos-1] = arr1[i];
+                    countPos++;
+                }
+            }
+            for(int j=0; j<output.Length;j++)
+            {
+                Console.Write(output[j]+" " );
+            }
+            Console.Read();
+        }
+    }
