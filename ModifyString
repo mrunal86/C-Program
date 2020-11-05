@@ -1,0 +1,31 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+           string originalStr = ReturnString();
+           string retStr = ModifyLastChar(originalStr);
+           Console.ReadKey();
+        }
+
+        private static string ReturnString()
+        {
+            Console.Write("Enter the string: ");
+            string str = Console.ReadLine();
+            return str;  
+        }
+
+        private static string ModifyLastChar(string arrEle)
+        {
+            int length = arrEle.Length;
+            int number = 0;
+            string c_last = arrEle.Substring(length - 1);
+            Console.WriteLine("enter number of character to repeat");
+            number = Int32.Parse(Console.ReadLine());
+            Console.Write("Modified String: "+arrEle);
+            for(int i=0;i<number;i++)
+            {
+                Console.Write(c_last);
+            }
+            return arrEle;
+        }
+    }
