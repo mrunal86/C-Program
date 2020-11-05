@@ -1,4 +1,4 @@
-# C-Program
+# CSharp Program
 this repository contains list of programs
 Reshuffle string will shuffle string for example:
 Input=> Donald Tump
