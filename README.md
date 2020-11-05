@@ -9,3 +9,5 @@ this repository contains list of programs.
    for example: 
    Input=> {3, 4, -4 , 5, -7}
    Output=> 3, 4, 5, -4, -7             
+3. Modify string: 
+    THis program would modifies string with repeating last character specified number of times.
