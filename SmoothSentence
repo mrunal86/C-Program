@@ -1,0 +1,38 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+           string originalStr = ReturnString();
+           string retStr = SmoothSentence(originalStr);
+           Console.ReadKey();
+        }
+        private static string ReturnString()
+        {
+            Console.Write("Enter the string: ");
+            string str = Console.ReadLine();
+            return str;  
+        }
+        private static string SmoothSentence(string arrEle)
+        {
+            int count = 0, space=0;
+            for(int j = 0;j < arrEle.Length;j++)
+            {
+                if(arrEle[j].Equals(' '))
+                {
+                    space++;
+                    if(arrEle[j-1]==arrEle[j+1])
+                    {
+                        count++;
+                    }
+                }
+            }
+            if(count==space)
+            {
+                Console.WriteLine("Sentence is smooth");
+            }
+            else
+                Console.WriteLine("Sentence is not smooth");
+                          
+            return arrEle;
+        }
+    }
