@@ -11,3 +11,6 @@ this repository contains list of programs.
    Output=> 3, 4, 5, -4, -7             
 3. Modify string: 
     THis program would modifies string with repeating last character specified number of times.
+4. Smooth Sentence:
+   A smooth sentence is the one where the last letter of each word is identical to the first letter the following word  
+   for example: He eat total Lamb
