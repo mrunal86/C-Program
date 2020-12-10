@@ -1,0 +1,28 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+public static class Adder
+{
+    public static void Main(string[] args)
+    {
+        int n = 122345;
+        int sum = 0, product = 1, finalans;
+
+        string arrString = Convert.ToString(n);
+
+        int[] Arr = new int[arrString.Length];       
+        for(int i=0;i< arrString.Length; i++) 
+        {
+            Arr[i] = Convert.ToInt32(arrString[i].ToString());
+
+            product = product * Arr[i];
+            sum += Arr[i];
+        }          
+
+        finalans = product - sum;
+        Console.WriteLine(finalans);
+        Console.Read();
+
+    }
+}
